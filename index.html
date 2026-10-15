@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    FRANK'S UPHOLSTERY — WEBSITE
+    ------------------------------------------------------------
+    QUICK START:
+    - Search for "EDIT:" throughout this file to find the main customisable areas.
+
+    This page intentionally uses no JavaScript. The navigation uses normal links,
+    and the before/after section uses two separate image slots per project.
+  -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- EDIT: Change the title and description to match the business and service area. -->
+  <title>Frank's Upholstery | Upholstery Repair & Restoration in Nova Scotia</title>
+  <meta name="description" content="Frank's Upholstery brings tired furniture back to life with careful upholstery, repairs and restoration in Nova Scotia.">
+
+  <!-- The stylesheet must stay beside this HTML file unless you update this path. -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Optional: Google Fonts. The site still works if these fonts cannot load. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Accessible skip link: keyboard users can jump directly to the main content. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ========================= HEADER / NAVIGATION ========================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- EDIT: Replace the text logo with a real logo image if you have one. -->
+      <a class="brand" href="#home" aria-label="Frank's Upholstery home">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span class="brand-copy">
+          <span class="brand-name">Frank's Upholstery</span>
+          <span class="brand-tagline">Craftsmanship that lasts</span>
+        </span>
+      </a>
+
+      <!-- Simple responsive navigation; no JavaScript menu required. -->
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#gallery">Our Work</a>
+        <a href="#about">About</a>
+        <a class="nav-cta" href="#contact">Request a Quote <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" id="home">
+      <div class="hero-texture" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Nova Scotia upholstery</p>
+          <h1>Give your favourite furniture <em>a second life.</em></h1>
+          <p class="hero-intro">
+            Quality upholstery, thoughtful repairs and timeless finishes for the pieces
+            you love — made to feel at home for years to come.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-light" href="#contact">Get a quote <span aria-hidden="true">→</span></a>
+            <a class="text-link text-link-light" href="#gallery">See the transformations <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <div class="hero-note">
+            <span class="note-star" aria-hidden="true">✳</span>
+            <span>Personal service. Careful workmanship. Furniture worth keeping.</span>
+          </div>
+        </div>
+
+        <!--
+          HERO PHOTO SLOT
+          Replace the placeholder below with a real workshop or finished-furniture photo.
+          Example:
+          <img src="images/hero-chair.jpg" alt="A newly upholstered vintage armchair">
+          Keep the image inside .hero-photo so it crops neatly.
+        -->
+        <div class="hero-visual">
+          <div class="hero-photo image-placeholder">
+            <span class="photo-number">01 / FEATURED WORK</span>
+            <div class="placeholder-content">
+              <span class="placeholder-icon" aria-hidden="true">＋</span>
+              <strong>Add a standout furniture photo</strong>
+              <small>Suggested: a beautifully restored chair or sofa</small>
+            </div>
+            <span class="photo-caption">Restored with care in Nova Scotia</span>
+          </div>
+          <div class="hero-stamp" aria-label="Made to be loved again">
+            <span>MADE TO</span>
+            <strong>BE LOVED</strong>
+            <span>AGAIN ✳</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom-rule" aria-hidden="true"></div>
+    </section>
+
+    <!-- ========================= TRUST STRIP ========================= -->
+    <section class="trust-strip" aria-label="Our approach">
+      <div class="container trust-grid">
+        <p><span class="trust-icon" aria-hidden="true">✳</span> Thoughtful craftsmanship</p>
+        <p><span class="trust-icon" aria-hidden="true">✳</span> Furniture with a story</p>
+        <p><span class="trust-icon" aria-hidden="true">✳</span> Proudly serving Nova Scotia</p>
+      </div>
+    </section>
+
+    <!-- =========================== SERVICES =========================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading heading-split">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> What we do</p>
+            <h2>Good furniture deserves <em>good work.</em></h2>
+          </div>
+          <p class="section-intro">
+            From a favourite armchair to a well-used family sofa, we help bring comfort,
+            character and a fresh finish back to your furniture.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <!-- EDIT: Change service titles and descriptions to reflect the real services offered. -->
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <div class="service-icon" aria-hidden="true">⌂</div>
+            <h3>Upholstery & Recovering</h3>
+            <p>Refresh chairs, sofas, dining seats and more with a fabric and finish that suits your space.</p>
+            <a class="arrow-link" href="#contact" aria-label="Ask about upholstery and recovering">Ask about this <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="service-card service-card-featured">
+            <span class="service-number">02</span>
+            <div class="service-icon" aria-hidden="true">✳</div>
+            <h3>Furniture Repair</h3>
+            <p>Give well-loved pieces another chance with repairs and practical improvements where possible.</p>
+            <a class="arrow-link" href="#contact" aria-label="Ask about furniture repair">Ask about this <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <div class="service-icon" aria-hidden="true">◒</div>
+            <h3>Custom Projects</h3>
+            <p>Have an unusual piece or a special idea? Let's talk through the project and its possibilities.</p>
+            <a class="arrow-link" href="#contact" aria-label="Ask about a custom project">Ask about this <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <p class="small-note">Service list is a starting point — update it to match Frank's actual offerings.</p>
+      </div>
+    </section>
+
+    <!-- ======================== BEFORE & AFTER ======================== -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-heading gallery-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Before, meet after</p>
+            <h2>Every piece has <em>potential.</em></h2>
+          </div>
+          <p class="section-intro">
+            Show the difference good upholstery can make. Add matching before-and-after
+            photos below to let the workmanship speak for itself.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <!-- PROJECT 1: Replace each .image-placeholder with an img element.
+               Example: <img src="images/chair-before.jpg" alt="Chair before upholstery"> -->
+          <article class="project-card">
+            <div class="comparison-grid">
+              <div class="comparison-image image-placeholder">
+                <span class="image-label">BEFORE</span>
+                <div class="placeholder-content compact">
+                  <span class="placeholder-icon" aria-hidden="true">＋</span>
+                  <strong>Add before photo</strong>
+                </div>
+              </div>
+              <div class="comparison-image image-placeholder">
+                <span class="image-label after-label">AFTER</span>
+                <div class="placeholder-content compact">
+                  <span class="placeholder-icon" aria-hidden="true">＋</span>
+                  <strong>Add after photo</strong>
+                </div>
+              </div>
+            </div>
+            <div class="project-caption">
+              <div><span class="project-category">PROJECT 01</span><h3>Classic chair refresh</h3></div>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Duplicate this article to add more before/after projects. -->
+          <article class="project-card">
+            <div class="comparison-grid">
+              <div class="comparison-image image-placeholder">
+                <span class="image-label">BEFORE</span>
+                <div class="placeholder-content compact">
+                  <span class="placeholder-icon" aria-hidden="true">＋</span>
+                  <strong>Add before photo</strong>
+                </div>
+              </div>
+              <div class="comparison-image image-placeholder">
+                <span class="image-label after-label">AFTER</span>
+                <div class="placeholder-content compact">
+                  <span class="placeholder-icon" aria-hidden="true">＋</span>
+                  <strong>Add after photo</strong>
+                </div>
+              </div>
+            </div>
+            <div class="project-caption">
+              <div><span class="project-category">PROJECT 02</span><h3>Family sofa renewal</h3></div>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="project-card">
+            <div class="comparison-grid">
+              <div class="comparison-image image-placeholder">
+                <span class="image-label">BEFORE</span>
+                <div class="placeholder-content compact">
+                  <span class="placeholder-icon" aria-hidden="true">＋</span>
+                  <strong>Add before photo</strong>
+                </div>
+              </div>
+              <div class="comparison-image image-placeholder">
+                <span class="image-label after-label">AFTER</span>
+                <div class="placeholder-content compact">
+                  <span class="placeholder-icon" aria-hidden="true">＋</span>
+                  <strong>Add after photo</strong>
+                </div>
+              </div>
+            </div>
+            <div class="project-caption">
+              <div><span class="project-category">PROJECT 03</span><h3>Dining seat makeover</h3></div>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="gallery-footer">
+          <span class="gallery-footnote">Your furniture. Your story. A fresh chapter.</span>
+          <a class="text-link" href="#contact">Have a piece in mind? <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== ABOUT ============================== -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <!-- ABOUT PHOTO SLOT: Good place for Frank at work or a detail of the workshop. -->
+        <div class="about-visual image-placeholder">
+          <span class="photo-number">IN THE WORKSHOP</span>
+          <div class="placeholder-content">
+            <span class="placeholder-icon" aria-hidden="true">＋</span>
+            <strong>Add a workshop photo</strong>
+            <small>Frank at work, tools, fabric or a finished piece</small>
+          </div>
+          <span class="about-photo-sticker">A little care<br>goes a long way.</span>
+        </div>
+
+        <div class="about-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> The person behind the work</p>
+          <h2>Built on care.<br><em>Finished with pride.</em></h2>
+          <!-- EDIT: Personalise this paragraph with Frank's real story and experience. -->
+          <p>
+            At Frank's Upholstery, every project starts with a conversation. The aim is
+            simple: understand what makes a piece special, recommend a practical approach,
+            and treat the furniture with the care it deserves.
+          </p>
+          <p>
+            Whether you're updating a room or bringing a treasured item back into use,
+            Frank is happy to discuss your ideas and help you explore the options.
+          </p>
+          <a class="button button-dark" href="#contact">Let's talk about your project <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== CONTACT CTA =========================== -->
+    <section class="contact-section" id="contact">
+      <div class="contact-pattern" aria-hidden="true"></div>
+      <div class="container contact-inner">
+        <div>
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> Start a project</p>
+          <h2>That old favourite?<br><em>Let's bring it back.</em></h2>
+          <p class="contact-intro">Send a few photos and a short description of your furniture. Frank can follow up to discuss the next steps.</p>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-card-label">GET IN TOUCH</span>
+          <!-- EDIT: Replace the phone number and email below. Use a real email address.
+               The phone link should use digits and an optional +country code in href. -->
+          <a class="contact-method" href="tel:+19025550123">
+            <span class="contact-method-icon" aria-hidden="true">☎</span>
+            <span><small>Call Frank</small><strong>(902) 555-0123</strong></span>
+            <span class="contact-method-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="contact-method" href="mailto:hello@franksupholstery.ca?subject=Upholstery%20quote%20request">
+            <span class="contact-method-icon" aria-hidden="true">✉</span>
+            <span><small>Email a project enquiry</small><strong>hello@franksupholstery.ca</strong></span>
+            <span class="contact-method-arrow" aria-hidden="true">↗</span>
+          </a>
+          <p class="contact-small-print">Please replace these example contact details before publishing.</p>
+        </div>
+      </div>
+      <div class="container contact-bottom">
+        <span>Serving Nova Scotia <span aria-hidden="true">✳</span></span>
+        <span>Good work is worth keeping.</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- =============================== FOOTER =============================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="#home">Frank's Upholstery<span>Craftsmanship that lasts</span></a>
+      <p>© <span id="copyright-year">2026</span> Frank's Upholstery. All rights reserved.</p>
+      <a class="back-to-top" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- No JavaScript is required for this page. Update the copyright year manually each year. -->
+</body>
+</html>
